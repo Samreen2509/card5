@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Card5</title>
+  <style>
+    *{
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+    }
+    body{
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      margin-top: 10%;
+    
+    }
+   main{
+    display: grid;
+    place-items: center;
+    height: 350px;
+    width: 270px;
+    background-image: url("https://as2.ftcdn.net/v2/jpg/03/90/33/43/1000_F_390334366_no8wsBjERNOpRTdtATR0xGZ6twT5800l.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 1rem;
+    transition: 2s ease;
+    overflow: hidden;
+   }
+
+   main > *{
+    grid-area: 1/1;
+   }
+   img{
+    height: 350px;
+    width: 270px;
+   }
+   main:hover img{
+    clip-path: polygon(100% 100%, 100% 100%, 100% 100%, 100% 100%);
+    transition: .5s ease-in-out;
+   }
+   
+  
+  </style>
+</head>
+<body>
+  <main>
+  <img src="https://as2.ftcdn.net/v2/jpg/03/90/33/43/1000_F_390334321_IlWexCFcXEJOuC1nWpBrPYRjFw8kXefg.jpg" alt="">
+  </main>
+</body>
+</html>
